@@ -1,6 +1,7 @@
 import { useRoutes } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import { Loading } from 'react-vant';
+import React from 'react';
 
 
 const Home = lazy(() => import('../pages/Home'))
@@ -13,7 +14,7 @@ const routes = [
         element: <Home />
     },
     {
-        page:'/mobx',
+        path:'/mobx',
         element:<PageOne  />
     }
 
